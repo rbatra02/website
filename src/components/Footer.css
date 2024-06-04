@@ -1,0 +1,32 @@
+/* Footer.css */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f0e8dc; /* Ensure this matches your design */
+    width: 100%;
+}
+
+.icon {
+    font-size: 50px; /* Adjust size as needed */
+    color: black;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: #000;
+    font-size: 24px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #555;
+}
+
+html, body {
+    height: 100%; /* Ensures the HTML and body tags take up the full viewport height */
+    margin: 0;
+    padding: 0;
+  }

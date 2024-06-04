@@ -1,0 +1,75 @@
+.projects-container {
+    padding: 20px;
+    background-color: #f0e8dc; /* Light background to match your theme */
+  }
+
+  h1{
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc; /* Slight border for each project */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+  }
+  
+  .project h2 {
+    color: #333; /* Darker text for headers */
+    font-size: 40px;
+  }
+  
+  .project p {
+    font-size: 30px;
+    color: #666; /* Lighter text for paragraph */
+    line-height: 1.6; /* Increased line height for readability */
+  }
+  
+.video-container {
+  position: relative;
+  width: 100%; /* Full width of the parent container */
+  padding-top: 30%; /* Aspect ratio of the video, adjust accordingly */
+  display: flex; /* Enables flexbox properties */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 0; /* Important to prevent the container from taking extra space */
+}
+
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%; /* Adjust width to desired percentage */
+    height: 100%; /* Adjust height to match width or as needed */
+    margin: auto; /* Helps in centering the iframe if container has a definite size */
+    border: none; /* Removes any default border */
+  }
+
+  .shorts-video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Ensures full width */
+    padding-top: 56.25%; /* Aspect ratio for the video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0; /* Prevents container from taking up space */
+    margin-top: 0; /* Ensures no top margin is affecting the layout */
+  }
+  
+  .shorts-video-container iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%; /* Width of the iframe */
+    height: 100%; /* Height of the iframe */
+    margin: auto; /* Centering the iframe */
+    border: none;
+  }

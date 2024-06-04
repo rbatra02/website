@@ -1,0 +1,10 @@
+/* AboutMeTitle.css */
+.about-me-title h1 {
+    text-align: center;
+    font-size: 60px; /* This is typically the largest size on standard content pages, adjust as needed */
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  

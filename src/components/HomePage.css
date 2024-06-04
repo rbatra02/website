@@ -1,0 +1,86 @@
+.home-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-page h1 {
+  font-size: 60px;
+}
+
+.home-page p {
+  font-size: 30px;
+  color: #666; /* Lighter text for paragraph */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+  grid-gap: 20px; /* Space between buttons */
+  justify-content: center; /* Center the grid items horizontally */
+  align-items: center; /* Center the grid items vertically */
+  max-width: 600px; /* Adjust width as needed */
+}
+
+.home-button {
+  display: flex;
+  flex-direction: column; /* Icon above the text */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background-color: #f0f0f0; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+  text-decoration: none;
+  padding: 25px; /* Larger padding for bigger buttons */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  font-size: 25px; /* Larger font size for the button text */
+  width: 250px; /* Wider buttons */
+  height: 170px; /* Taller buttons */
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #e0e0e0; /* Color change on hover */
+}
+
+.home-button svg {
+  font-size: 70px; /* Larger size for icons */
+  margin-bottom: 15px; /* Space between icon and text */
+}
+
+.profile-image {
+  margin-left: 60px; /* Increase space between the buttons and the image */
+  max-width: 350px; /* Increase the width */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .content-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .button-container {
+    grid-template-columns: 1fr; /* One button per row on small screens */
+    padding: 20px;
+  }
+
+  .home-button {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Auto height for better flexibility */
+  }
+
+  .profile-image {
+    margin-left: 0; /* Remove margin on small screens */
+    margin-top: 20px; /* Add top margin to separate from buttons */
+    width: 80%; /* Adjust width for smaller screens */
+  }
+}

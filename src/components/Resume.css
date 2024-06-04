@@ -1,0 +1,48 @@
+/* Resume.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0e8dc; /* Maintain existing background color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.resume-section {
+  width: 100%; /* Use full width of the viewport */
+  min-height: 100vh; /* Minimum height is 100% of the viewport height */
+  padding: 40px 20px; /* Increased padding for better spacing */
+  box-sizing: border-box; /* Ensures padding does not add to the width */
+}
+
+ .resume-section p {
+  text-align: left; /* Keep text left-aligned */
+  color: #666; /* Lighter text for paragraph */
+  line-height: 1.6; /* Increased line height for readability */
+  font-size: 30px; /* Standard font size for body text */
+  width: 100%; /* Allows text to fill the entire width of the page */
+}
+
+
+.interest-image, .hobby-image {
+  width: 300px; /* Uniform size for visibility */
+  margin: 20px auto; /* Center images with automatic horizontal margins */
+  border-radius: 5px; /* Rounded corners for a smoother look */
+  border: 2px solid #ccc; /* Maintain border for visibility */
+  display: block; /* Ensure images are block-level for margin handling */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center; /* Center images in this container */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap images to handle responsiveness */
+  width: 100%; /* Full width for the container */
+}
+
+/* Specific margin adjustments for first and last images */
+.hobby-image:first-child {
+  margin-left: 2.5%; /* Slight left margin for the first image in the flex container */
+}
+
